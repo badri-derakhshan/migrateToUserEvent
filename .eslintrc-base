@@ -1,0 +1,53 @@
+{
+    "extends": ["airbnb", "airbnb-typescript"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "@typescript-eslint/type-annotation-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true,
+          "overrides": {
+            "arrow": {
+              "before": true,
+              "after": true
+            }
+          }
+        }
+      ],
+      "arrow-parens": [
+        "error",
+        "as-needed",
+        {
+          "requireForBlockBody": true
+        }
+      ],
+      "camelcase": "off",
+      "class-methods-use-this": "off",
+      "import/order": "off",
+      "linebreak-style": "off",
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "no-empty": "off",
+      "no-nested-ternary": "off",
+      "no-underscore-dangle": [
+        "error"
+      ],
+      "no-unused-expressions": [
+        "error",
+        {
+          "allowShortCircuit": true
+        }
+      ]
+    }
+  }
